@@ -1,4 +1,4 @@
-# SMS gateway for HK mitake
+# SMS gateway for mitake
 
 [![Latest Stable Version](https://poser.pugx.org/huangdijia/laravel-mitake/version.png)](https://packagist.org/packages/huangdijia/laravel-mitake)
 [![Total Downloads](https://poser.pugx.org/huangdijia/laravel-mitake/d/total.png)](https://packagist.org/packages/huangdijia/laravel-mitake)
