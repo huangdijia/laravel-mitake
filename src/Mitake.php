@@ -67,7 +67,6 @@ class Mitake
 
         if (empty($result['statuscode']) || $result['statuscode'] != '1') {
             $this->error = $result['Error'];
-            Log::record($this->error, Log::ERR);
             return false;
         }
 
