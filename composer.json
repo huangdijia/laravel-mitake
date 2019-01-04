@@ -32,7 +32,7 @@
             "providers": [
                 "Huangdijia\\Mitake\\MitakeServiceProvider"
             ],
-            "alias": {
+            "aliases": {
                 "Mitake": "Huangdijia\\Mitake\\Facades\\Mitake"
             }
         }
