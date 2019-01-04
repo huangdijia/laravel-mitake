@@ -2,6 +2,8 @@
 
 namespace Huangdijia\Mitake;
 
+use Huangdijia\Curl\Facades\Curl;
+
 class Mitake
 {
     private $config = [];
