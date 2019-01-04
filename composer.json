@@ -31,7 +31,10 @@
         "laravel": {
             "providers": [
                 "Huangdijia\\Mitake\\MitakeServiceProvider"
-            ]
+            ],
+            "alias": {
+                "Mitake": "Huangdijia\\Mitake\\Facades\\Mitake"
+            }
         }
     }
 }
