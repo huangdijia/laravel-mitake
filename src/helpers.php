@@ -13,21 +13,3 @@ if (!function_exists('mitake_send')) {
     }
 }
 
-if (!function_exists('config_path')) {
-    /**
-     * Get the configuration path.
-     *
-     * @param  string  $name
-     * @return string
-     */
-    function config_path($name = '')
-    {
-        if (is_callable(app(), 'getConfigurationPath')) {
-            return app()->getConfigurationPath($name);
-        } elseif (app()->has('path.config')) {
-            return app()->make('path.config') . ($name ? DIRECTORY_SEPARATOR . $name : $name);
-        } else {
-            return app()->make('path') . '/../config' . ($name ? DIRECTORY_SEPARATOR . $name : $name);
-        }
-    }
-}
