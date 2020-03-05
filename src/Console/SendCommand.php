@@ -13,10 +13,11 @@ class SendCommand extends Command
     {
         $mobile  = $this->argument('mobile');
         $message = $this->argument('message');
-        $mitake  = app('sms.mitake');
 
-        if (!$mitake->send($mobile, $message)) {
-            $this->error($mitake->getError(), 1);
+        try {
+            $this->laravel->make('sms.mitake')->send($mobile, $message);
+        } catch (\Exception $e) {
+            $this->error($e->getMessage(), 1);
             return;
         }
 

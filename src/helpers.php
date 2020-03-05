@@ -9,7 +9,7 @@ if (!function_exists('mitake')) {
 if (!function_exists('mitake_send')) {
     function mitake_send($mobile = '', $message = '')
     {
-        return app('sms.mitake')->send($mobile, $message) ?: app('sms.mitake')->getError();
+        return app('sms.mitake')->send($mobile, $message);
     }
 }
 
